@@ -189,7 +189,7 @@ export default function Carousel() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-6 py-3 rounded-lg bg-green-500 hover:bg-green-400 text-white font-semibold transition-all hover:shadow-lg hover:shadow-green-500/30 hover:-translate-y-0.5"
               >
-                <WhatsAppIcon width={18} height={18} variant="default" /> Pedir ahora
+                <WhatsAppIcon size={18} variant="default" /> Pedir ahora
               </a>
             </div>
           </div>

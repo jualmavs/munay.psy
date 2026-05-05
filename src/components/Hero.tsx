@@ -180,7 +180,7 @@ export default function Hero() {
             rel="noopener noreferrer"
             className="hero-cta opacity-0 flex items-center gap-2 px-8 py-4 rounded-lg bg-green-500 hover:bg-green-400 text-white font-semibold text-base transition-all hover:shadow-xl hover:shadow-green-500/30 hover:-translate-y-1"
           >
-            <WhatsAppIcon width={20} height={20} variant="default" /> Empieza tu Camino
+            <WhatsAppIcon size={20} variant="default" /> Empieza tu Camino
           </a>
           <button
             onClick={() => document.querySelector('#productos')?.scrollIntoView({ behavior: 'smooth' })}

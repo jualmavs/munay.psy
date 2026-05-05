@@ -59,7 +59,7 @@ export default function Footer() {
                 className="w-9 h-9 rounded-lg flex items-center justify-center transition-all hover:scale-110 hover:shadow-lg"
                 style={{ background: '#25D366' }}
               >
-                <WhatsAppIcon width={18} height={18} variant="default" />
+                <WhatsAppIcon size={18} variant="default" />
               </a>
 
               {/* Instagram */}

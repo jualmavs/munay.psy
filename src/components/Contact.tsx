@@ -17,7 +17,7 @@ const SOCIAL = [
     url: 'https://wa.me/573145712545',
     bg: '#25D366',
     icon: (
-      <WhatsAppIcon width={22} height={22} variant="default" />
+      <WhatsAppIcon size={22} variant="default" />
     ),
   },
   {
@@ -217,7 +217,7 @@ export default function Contact() {
                 type="submit"
                 className="w-full flex items-center justify-center gap-2 py-4 rounded-lg bg-green-500 hover:bg-green-400 text-white font-semibold transition-all hover:shadow-lg hover:shadow-green-500/30 hover:-translate-y-0.5"
               >
-                <WhatsAppIcon width={20} height={20} variant="default" />
+                <WhatsAppIcon size={20} variant="default" />
                 {sent ? '¡Mensaje enviado! ✓' : 'Enviar por WhatsApp'}
               </button>
 

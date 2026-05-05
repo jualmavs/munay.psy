@@ -2,11 +2,27 @@ import type { Metadata, Viewport } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'MUNAY.PSY | Sabiduría Ancestral × Bienestar Moderno',
-  description: 'Adaptógenos, fermentos vivos y enteógenos naturales de Colombia. Melena de León, Kombucha, Miel Ceremonial y más.',
-  keywords: ['MUNAY','adaptógenos','melena de león','kombucha','enteógenos','bienestar','Colombia'],
+  metadataBase: new URL('https://munay.psy'),
+  title: {
+    default: 'MUNAY.PSY | Sabiduría Ancestral × Bienestar Moderno',
+    template: '%s | MUNAY.PSY',
+  },
+  description:
+    'Adaptógenos, fermentos vivos y enteógenos naturales de Colombia. Melena de León, Kombucha, Miel Ceremonial y más.',
+  keywords: [
+    'MUNAY',
+    'adaptógenos',
+    'melena de león',
+    'kombucha',
+    'enteógenos',
+    'bienestar',
+    'Colombia',
+  ],
   authors: [{ name: 'MUNAY.PSY' }],
   creator: 'MUNAY.PSY',
+  alternates: {
+    canonical: 'https://munay.psy',
+  },
   openGraph: {
     type: 'website',
     locale: 'es_CO',
@@ -14,16 +30,27 @@ export const metadata: Metadata = {
     siteName: 'MUNAY.PSY',
     title: 'MUNAY.PSY | Sabiduría Ancestral × Bienestar Moderno',
     description: 'Adaptógenos, fermentos vivos y enteógenos naturales.',
-    images: [{ url: '/images/logo.png', width: 1200, height: 630, alt: 'MUNAY.PSY' }],
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'MUNAY.PSY',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'MUNAY.PSY | Sabiduría Ancestral × Bienestar Moderno',
     description: 'Adaptógenos, fermentos vivos y enteógenos naturales. Colombia.',
-    images: ['/images/logo.png'],
+    images: ['/images/og-image.jpg'],
   },
   robots: { index: true, follow: true },
-  icons: { icon: '/favicon.png', shortcut: '/favicon.png', apple: '/favicon.png' },
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
 };
 
 export const viewport: Viewport = {
@@ -57,7 +84,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Syne:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: schemaOrg }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: schemaOrg }}
+        />
       </head>
       <body>{children}</body>
     </html>

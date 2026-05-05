@@ -17,7 +17,7 @@ export default function SocialFloat() {
         className="group relative w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-200 hover:scale-110 hover:shadow-xl"
         style={{ background: '#25D366' }}
       >
-        <WhatsAppIcon width={24} height={24} variant="default" />
+        <WhatsAppIcon size={24} variant="default" />
         <span className="absolute right-full mr-3 bg-[#0A0A14] border border-white/10 text-white text-xs font-semibold px-2.5 py-1 rounded-md whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
           WhatsApp
         </span>
