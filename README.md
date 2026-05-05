@@ -24,7 +24,7 @@
 | Animaciones | GSAP 3.12 + ScrollTrigger |
 | Partículas | Canvas API nativo |
 | Tipografía | Cormorant Garamond + Syne |
-| Hosting | Netlify |
+| Hosting rec. | Vercel |
 
 ---
 
@@ -34,23 +34,23 @@
 # 1. Instalar dependencias
 npm install
 
-# 2. Ejecutar en desarrollo
+# 2. Desarrollo
 npm run dev
 # → http://localhost:3000
 
-# 3. Build de producción
+# 3. Build producción
 npm run build
-
-# 4. Ejecutar versión de producción local
 npm run start
+```
 
 ---
 
-📁 Estructura del Proyecto
+## 📁 Estructura
 
+```
 src/
 ├── app/
-│   ├── layout.tsx      # Metadatos SEO + fuentes globales
+│   ├── layout.tsx      # Metadatos SEO + fuentes
 │   ├── page.tsx        # Ensamblado de secciones
 │   └── globals.css     # Variables + estilos base
 ├── components/
@@ -64,36 +64,37 @@ src/
 │   └── SocialFloat.tsx # Iconos flotantes
 └── lib/
     └── data.ts         # Productos y testimonios
-
-
 public/
 ├── favicon.png
 └── images/
     ├── logo.png
-    ├── og-image.jpg
     └── products/
         ├── kombucha.png
         ├── miel.png
         └── enteogenos.png
+```
 
 ---
 
-🎨 Características
-✅ Hero inmersivo — Canvas con partículas bioluminiscentes y animaciones GSAP
-✅ Carrusel de productos — Imágenes, descripciones, precios y CTA
-✅ Sección Sobre Nosotros — Filosofía y pilares de la marca
-✅ Testimonios — Reseñas con valoración visual
-✅ Formulario → WhatsApp — Sin backend, redirección prediligenciada
-✅ Iconos sociales flotantes — WhatsApp, Instagram y Facebook con SVG reales
-✅ Responsive 100% — Mobile-first, probado en varios breakpoints
-✅ SEO completo — Schema.org, Open Graph y Twitter Card
-✅ Accesibilidad — ARIA labels, contraste adecuado y navegación por teclado
-✅ Footer limpio — Enlaces internos y experiencia visual consistente
+## 🎨 Características
+
+- ✅ **Hero inmersivo** — Canvas partículas bioluminiscentes + GSAP word-reveal
+- ✅ **Carrusel de productos** — Con imagen, descripción, precio y CTA
+- ✅ **Sección Sobre Nosotros** — Filosofía + pilares de la marca
+- ✅ **Testimonios** — Estrellas reales, 5 reseñas
+- ✅ **Formulario → WhatsApp** — Sin backend, redirige prediligenciado
+- ✅ **Iconos sociales flotantes** — WhatsApp, Instagram, Facebook con SVG reales
+- ✅ **Responsive 100%** — Mobile-first, probado en todos los breakpoints
+- ✅ **SEO completo** — Schema.org, Open Graph, Twitter Card
+- ✅ **WCAG AA** — ARIA labels, contraste, keyboard nav
+- ✅ **Footer limpio** — Enlaces internos y experiencia visual consistente
 
 ---
 
-🌐 Deploy en Netlify
+## 🌐 Deploy en Netlify
+
 # Opción A: Netlify CLI
+```bash
 npm install -g netlify-cli
 netlify deploy --prod
 
@@ -104,13 +105,15 @@ netlify deploy --prod
 #    - Build command: npm run build
 #    - Publish directory: .next
 # 4. Despliega el sitio
+```
 
 ---
 
-📞 Contacto MUNAY
-WhatsApp: +57 314 571 2545
-Instagram: @munay.psy
-Email: munaynature24@gmail.com
+## 📞 Contacto MUNAY
+
+- WhatsApp: +57 314 571 2545
+- Instagram: @munay.psy
+- Email: munaynature24@gmail.com
 
 ---
 
