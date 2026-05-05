@@ -2,6 +2,10 @@
 
 > **Sabiduría Ancestral × Bienestar Moderno**
 
+[![Ver demo en vivo](https://img.shields.io/badge/Ver%20demo%20en%20vivo-MUNAY.PSY-25D366?style=for-the-badge&logo=netlify&logoColor=white)](https://munay-psy.netlify.app/)
+
+🔗 **Sitio en producción:** https://munay-psy.netlify.app/
+
 ![Version](https://img.shields.io/badge/version-2.0.0-purple)
 ![Next.js](https://img.shields.io/badge/Next.js-14.2-black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.4-blue)
@@ -20,7 +24,7 @@
 | Animaciones | GSAP 3.12 + ScrollTrigger |
 | Partículas | Canvas API nativo |
 | Tipografía | Cormorant Garamond + Syne |
-| Hosting rec. | Vercel |
+| Hosting | Netlify |
 
 ---
 
@@ -30,23 +34,23 @@
 # 1. Instalar dependencias
 npm install
 
-# 2. Desarrollo
+# 2. Ejecutar en desarrollo
 npm run dev
 # → http://localhost:3000
 
-# 3. Build producción
+# 3. Build de producción
 npm run build
+
+# 4. Ejecutar versión de producción local
 npm run start
-```
 
 ---
 
-## 📁 Estructura
+📁 Estructura del Proyecto
 
-```
 src/
 ├── app/
-│   ├── layout.tsx      # Metadatos SEO + fuentes
+│   ├── layout.tsx      # Metadatos SEO + fuentes globales
 │   ├── page.tsx        # Ensamblado de secciones
 │   └── globals.css     # Variables + estilos base
 ├── components/
@@ -60,52 +64,53 @@ src/
 │   └── SocialFloat.tsx # Iconos flotantes
 └── lib/
     └── data.ts         # Productos y testimonios
+
+
 public/
 ├── favicon.png
 └── images/
     ├── logo.png
+    ├── og-image.jpg
     └── products/
         ├── kombucha.png
         ├── miel.png
         └── enteogenos.png
-```
 
 ---
 
-## 🎨 Características
-
-- ✅ **Hero inmersivo** — Canvas partículas bioluminiscentes + GSAP word-reveal
-- ✅ **Carrusel de productos** — Con imagen, descripción, precio y CTA
-- ✅ **Sección Sobre Nosotros** — Filosofía + pilares de la marca
-- ✅ **Testimonios** — Estrellas reales, 5 reseñas
-- ✅ **Formulario → WhatsApp** — Sin backend, redirige prediligenciado
-- ✅ **Iconos sociales flotantes** — WhatsApp, Instagram, Facebook con SVG reales
-- ✅ **Responsive 100%** — Mobile-first, probado en todos los breakpoints
-- ✅ **SEO completo** — Schema.org, Open Graph, Twitter Card
-- ✅ **WCAG AA** — ARIA labels, contraste, keyboard nav
-- ✅ **Sin links externos en footer** — Todo el footer usa anclas internas
+🎨 Características
+✅ Hero inmersivo — Canvas con partículas bioluminiscentes y animaciones GSAP
+✅ Carrusel de productos — Imágenes, descripciones, precios y CTA
+✅ Sección Sobre Nosotros — Filosofía y pilares de la marca
+✅ Testimonios — Reseñas con valoración visual
+✅ Formulario → WhatsApp — Sin backend, redirección prediligenciada
+✅ Iconos sociales flotantes — WhatsApp, Instagram y Facebook con SVG reales
+✅ Responsive 100% — Mobile-first, probado en varios breakpoints
+✅ SEO completo — Schema.org, Open Graph y Twitter Card
+✅ Accesibilidad — ARIA labels, contraste adecuado y navegación por teclado
+✅ Footer limpio — Enlaces internos y experiencia visual consistente
 
 ---
 
-## 🌐 Deploy en Vercel
+🌐 Deploy en Netlify
+# Opción A: Netlify CLI
+npm install -g netlify-cli
+netlify deploy --prod
 
-```bash
-# Opción A: Vercel CLI
-npx vercel --prod
-
-# Opción B: Panel Vercel
+# Opción B: Despliegue conectado a GitHub
 # 1. Sube el proyecto a GitHub
-# 2. Conecta en vercel.com
-# 3. Click "Deploy"
-```
+# 2. Conecta el repositorio en netlify.com
+# 3. Configura:
+#    - Build command: npm run build
+#    - Publish directory: .next
+# 4. Despliega el sitio
 
 ---
 
-## 📞 Contacto MUNAY
-
-- WhatsApp: +57 314 571 2545
-- Instagram: @munay.psy
-- Email: munaynature24@gmail.com
+📞 Contacto MUNAY
+WhatsApp: +57 314 571 2545
+Instagram: @munay.psy
+Email: munaynature24@gmail.com
 
 ---
 
